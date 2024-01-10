@@ -11,3 +11,13 @@ future implementation:
 - simple crafting system by combining different items into another item
 - switch between 3rd person and 1st person view
 
+Assets: 
+- Little Ghost lowpoly(FREE) by SR STUDIOS KERALA
+- Low Poly Simple Medieval Props by JUST CREATE
+
+Scripts: 
+- Assets/Scripts/Player
+- Assets/Scripts/Interactable
+
+Prefabs: 
+- Assets/PREFABS     (these are copies of the original assets with added tweaks like adding GrabbableObject C# script and Rigibody component)
