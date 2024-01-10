@@ -4,7 +4,7 @@
 Simple functionality for picking up items and dropping them in game. 
 No Inventory UI system. 
 
-You move around as a little ghost and move items around. 
+You move around as a little ghost and interact with different items.
 
 future implementation: 
 
