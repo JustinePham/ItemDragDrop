@@ -16,12 +16,18 @@ public class GrabbableObject : MonoBehaviour
         rb.useGravity = false;
         rb.isKinematic = true;
     }
-
+    public void OnCollisionExit(Collision collision)
+    {
+       // rb.isKinematic = true;
+        rb.useGravity = true;
+    }
     public void Drop()
     {
         rb.useGravity = true;
-        objectGrabPointTransform = null;
         rb.isKinematic = false;
+        objectGrabPointTransform = null;
+
+
     }
     private void FixedUpdate()
     {

@@ -1,5 +1,60 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &665343643134884036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7518754138416516534}
+  - component: {fileID: 5911102526971543219}
+  m_Layer: 7
+  m_Name: spherecollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7518754138416516534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665343643134884036}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.2464325, y: -0.27989194, z: 0.6555023, w: 0.65669495}
+  m_LocalPosition: {x: 0.0295, y: 0.0773, z: 0.0208}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5065557321846814837}
+  m_LocalEulerAnglesHint: {x: 2.48, y: -43.735, z: 88.9}
+--- !u!136 &5911102526971543219
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665343643134884036}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.032471124
+  m_Height: 0.079087876
+  m_Direction: 1
+  m_Center: {x: -0.07623723, y: 0.036002778, z: -0.000182464}
 --- !u!1 &7679476478813795987
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +69,7 @@ GameObject:
   - component: {fileID: 1674557106155783501}
   - component: {fileID: -4447467925307768669}
   - component: {fileID: -4889964078657158288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Food_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,7 +88,9 @@ Transform:
   m_LocalPosition: {x: 581.4557, y: -36.3255, z: 463.3988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1351469558407410400}
+  - {fileID: 7518754138416516534}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5456117805350288566
@@ -103,7 +160,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.079824, y: 0.18717568, z: 0.08393181}
   m_Center: {x: -0.0008121263, y: 0.06323961, z: -0.002579853}
@@ -146,3 +203,58 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &8371555627365247997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351469558407410400}
+  - component: {fileID: 3714656509873750011}
+  m_Layer: 7
+  m_Name: spherecollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1351469558407410400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371555627365247997}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.22093156, y: -0.25431994, z: 0.6645312, w: 0.66701496}
+  m_LocalPosition: {x: 0.0199, y: 0.0782, z: 0.0294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5065557321846814837}
+  m_LocalEulerAnglesHint: {x: 2.48, y: -39.309, z: 88.9}
+--- !u!136 &3714656509873750011
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371555627365247997}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.032471124
+  m_Height: 0.079087876
+  m_Direction: 1
+  m_Center: {x: -0.07623723, y: 0.036002778, z: -0.000182464}

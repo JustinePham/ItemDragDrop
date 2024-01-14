@@ -26,15 +26,13 @@ public class PlayerPickupDrop : MonoBehaviour
                     if (raycastHit.transform.TryGetComponent(out grabbableObject))
                     {
                         grabbableObject.Grab(grabPoint.transform);
-                        Debug.Log(grabbableObject);
+                        //Debug.Log(grabbableObject);
                     }
                 }
             }
             else // drops the grabbable object if alreayd holding it.
             {
                 Debug.Log("DROP OBJECT");
-
-
                 grabbableObject.Drop();
                 grabbableObject = null;
             }
