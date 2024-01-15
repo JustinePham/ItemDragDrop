@@ -10,6 +10,7 @@ future implementation:
 
 - simple crafting system by combining different items into another item
 - switch between 3rd person and 1st person view
+- UI for exiting game, main menu, and settings
 
 Assets: 
 - Little Ghost lowpoly(FREE) by SR STUDIOS KERALA
