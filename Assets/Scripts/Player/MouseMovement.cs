@@ -29,8 +29,6 @@ public class MouseMovement : MonoBehaviour
             Debug.Log(gameObject);
         };
 
-      //  if (!InventorySystem.Instance.isOpen && !CraftingSystem.Instance.isOpen)
-     //   {
             Cursor.lockState = CursorLockMode.Locked;
 
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
@@ -47,12 +45,7 @@ public class MouseMovement : MonoBehaviour
 
             //applying both rotations
             transform.localRotation = Quaternion.Euler(xRotation, YRotation, 0f);
-      //  }
-       // else
-      //  {
-           // Cursor.lockState = CursorLockMode.None;
-
-      //  }
+   
        
     }
 }

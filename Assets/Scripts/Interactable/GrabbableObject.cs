@@ -31,6 +31,8 @@ public class GrabbableObject : MonoBehaviour
     }
     private void FixedUpdate()
     {
+
+
         if (objectGrabPointTransform != null)
         {
             float lerpSpeed = 10f;

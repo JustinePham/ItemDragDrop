@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3454826361594839636}
   - component: {fileID: 1320392861609684296}
   - component: {fileID: -136283662424434706}
+  - component: {fileID: 6552221819475915915}
   m_Layer: 0
   m_Name: Bottle_01
   m_TagString: Untagged
@@ -105,8 +106,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.12649588, y: 0.21362661, z: 0.12649588}
-  m_Center: {x: 0.0000066012144, y: 0.10480418, z: -0.00007263571}
+  m_Size: {x: 0.038330078, y: 0.21395206, z: 0.04058838}
+  m_Center: {x: -0.0015869141, y: 0.10464144, z: 0}
 --- !u!114 &1320392861609684296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +147,24 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &6552221819475915915
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477581787281291157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.055091858
+  m_Center: {x: 0.0000066012144, y: 0.05387497, z: -0.00007263571}

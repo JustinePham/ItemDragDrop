@@ -60,11 +60,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Crafting\CraftingTable.cs" />
     <Compile Include="Assets\Scripts\Interactable\GrabbableObject.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPickupDrop.cs" />
+    <Compile Include="Assets\Scripts\Interactable\ScriptableObjects\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Player\AI_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\MouseMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Crafting\PlayerCrafting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Little_GhostLP(FREE)\Documentation\Documentation(Little Ghost FREE).txt" />
