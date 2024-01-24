@@ -62,12 +62,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Crafting\CraftingTable.cs" />
     <Compile Include="Assets\Scripts\Interactable\GrabbableObject.cs" />
+    <Compile Include="Assets\Scripts\Interactable\ScriptableObjects\Recipes\Cooking\SimpleSoupSO.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPickupDrop.cs" />
     <Compile Include="Assets\Scripts\Interactable\ScriptableObjects\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Player\AI_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\MouseMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Crafting\PlayerCrafting.cs" />
+    <Compile Include="Assets\Scripts\Interactable\ScriptableObjects\Recipes\FoodRecipeSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Little_GhostLP(FREE)\Documentation\Documentation(Little Ghost FREE).txt" />

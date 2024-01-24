@@ -24,17 +24,17 @@ public class CraftingTable : MonoBehaviour
         );
         //Debug.Log("transform.position: " + transform.position);
         //Debug.Log("craftingDropPoint.transform.position: " + craftingDropPoint.transform.position);
-       // Debug.Log("craftingDropPoint.center: " + craftingDropPoint.center);
-       // Debug.Log("craftingDropPoint.size " + craftingDropPoint.size);
+        // Debug.Log("craftingDropPoint.center: " + craftingDropPoint.center);
+        // Debug.Log("craftingDropPoint.size " + craftingDropPoint.size);
         //Debug.Log("craftingDropPoint.transform.rotation " + craftingDropPoint.transform.rotation);
 
         //   CraftWithCollider(craftingDropPoint);
-    //    Debug.Log("craftingdroppioint: " + craftingDropPoint.center);
+        //    Debug.Log("craftingdroppioint: " + craftingDropPoint.center);
 
         //Scene scene = SceneManager.GetActiveScene();
         //GameObject[] g = scene.GetRootGameObjects();
-       // Debug.Log("scene: " + scene.name);
-       // Debug.Log("gameobs: " + g);
+        // Debug.Log("scene: " + scene.name);
+        // Debug.Log("gameobs: " + g);
         //foreach (GameObject obj in g)
         //{
         //    if(obj.name == "Food_06" )
@@ -44,32 +44,41 @@ public class CraftingTable : MonoBehaviour
         //        Debug.Log("obj.transform.position - stuff" + (obj.transform.position - craftingDropPoint.transform.position - craftingDropPoint.center));
         //    }
         //}
+        //List<Item> inputItems = new List<Item>(new FoodRecipeSO().ingredients);
+
+
+        // Check for all food ingredients 
+        // need more than one food item to perform recipe
+        var ingredients = new List<GameObject>();
         foreach (Collider collider in colliderArray)
         {
-            Debug.Log(collider);
+           
+
+            if (collider.TryGetComponent(out Item ingredient))
+            {
+                if (ingredient.type == ItemType.Consumable || ingredient.type == ItemType.Food)
+                {
+                    ingredients.Add(collider.gameObject);
+                    Debug.Log(collider);
+                }
+            }
         }
-    }
 
-    private void CraftWithCollider(BoxCollider collider)
-    {
-        Debug.Log("Getting...");
-        Bounds bounds = craftingDropPoint.bounds;
-        //Collider[] colliders = Physics.OverlapBox(
-        //    center: collider.transform.position + (collider.transform.rotation * collider.center),
-        //    halfExtents: Vector3.Scale(collider.size * 0.5f, collider.transform.lossyScale),
-        //    orientation: collider.transform.rotation,
-        //    layerMask: mask
-        //);
-
-        Collider[] colliders = Physics.OverlapBox(bounds.center, bounds.size);
-        foreach (Collider c in colliders)
+        // get the food recipe object. 
+        if (ingredients.Count > 1 )
         {
-            Debug.Log(c);
+            Debug.Log("YES");
+            // has more than one ingredient,
+            // destroy the ingredients
+            // instantiate food dish
         }
-        print($"{colliders.Length} colliders detected");
-
-
-        // ...
+        else
+        {
+            Debug.Log("NO");
+            // do not destroy items,
+            // dont instantiate food dish
+            // trigger error message? 
+        }
     }
     // Update is called once per frame
     void Update()

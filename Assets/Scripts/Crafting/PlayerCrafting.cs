@@ -11,13 +11,22 @@ public class PlayerCrafting : MonoBehaviour
     [SerializeField] private Transform playerCameraTransform;
      
     // Update is called once per frame
-    void FixedUpdate()
+  
+    void OnCollisionEnter(Collision collision)
     {
+        Debug.DrawRay(collision.contacts[0].point, collision.contacts[0].normal, Color.green, 2, false);
+    }
+    private void Update()
+    {
+        Debug.DrawRay(playerCameraTransform.position, playerCameraTransform.forward, Color.green);
+        Debug.DrawLine(playerCameraTransform.position, playerCameraTransform.forward, Color.blue, 10f);
         if (Input.GetKeyUp(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
-            float interactDistance = 3f;
+            float interactDistance = 7f;
             if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, interactDistance))
             {
+                Debug.Log(raycastHit);
+                Debug.Log(raycastHit.collider.gameObject);
                 if (raycastHit.transform.TryGetComponent(out CraftingTable craftingTable))
                 {
                     // interacts with crafting table

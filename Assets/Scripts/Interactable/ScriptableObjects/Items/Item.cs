@@ -6,6 +6,7 @@ using UnityEngine;
 
 public enum ItemType
 {
+    Food,
     Consumable,
     CraftingMaterial,
     Tool
@@ -27,10 +28,9 @@ public enum ElementType
     Water,
     Fire
 }
-
-[CreateAssetMenu(menuName = "ScriptableObjects/Items")]
-public class Item : ScriptableObject
+public class Item : MonoBehaviour
 {
+    [Header("Only gameplay")]
     public ItemType type;
     public ElementType element;
     public CraftMaterialType material;
