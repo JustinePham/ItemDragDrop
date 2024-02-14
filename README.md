@@ -1,5 +1,7 @@
 ![image](https://github.com/JustinePham/ItemDragDrop/assets/8952158/751bb157-f7ac-42a6-9240-6c61d913717f)
 
+Made with
+![Unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white)
 
 Simple functionality for picking up items and dropping them in game. 
 No Inventory UI system. 
